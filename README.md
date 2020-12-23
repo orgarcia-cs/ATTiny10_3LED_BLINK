@@ -16,6 +16,8 @@ SOT23_2_DIP.jpg - An ATTiny10 soldered by hand onto a pre-made SOT23 to 8-Pin DI
 SOT23_Socket.jpg - Future task, make this into a board to load on Arduino for free
 chip programming.
 
+PulseWaveForms.png - a description of the waveform produced.
+
 README.md - This file
 LICENSE - Rights and limitations declaration.
 
@@ -62,12 +64,11 @@ stretch to think that an ATTiny10 could run Linux but still sounds fun to try ma
 the C64 though with the limitations above and a bunch of hardware support it probably would run around
 0.5Mhz at best.
 
-Anything other than blinking an LED is gonna require a lot of single pin time multiplexing
-to do anything more complicated than blinking an LED so...
+Anything other than blinking an LED is gonna require a lot of single pin time multiplexing so...
 
 On that note, how about blinking THREE LEDs!
 
-There is an inbuilt Pulse Wave Modulation in most ATTiny chips and I think this includes two
+There is an inbuilt Pulse Wave Modulation in most ATTiny chips and I think this includes two.
 I don't like it much though because you cannot vary the duty cycle, and the frequency steps available
 are a bit limited so here is a software version of that so that it can run all three pins.
 The idea is there is a larger pulse on/off cycle that are the blink speed and
